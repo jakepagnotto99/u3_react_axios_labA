@@ -11,7 +11,7 @@ const PlanetPage = () => {
     useEffect(()=>{
         const getStarship = async() => {
             console.log('this function is called')
-            const response = await axios.get(`${BASE_URL}/api/planets/${planetId}`)
+            const response = await axios.get(`https://swapi.dev/api/planets/${planetId}`)
             console.log(response)
             setPlanetData(response.data)
         }

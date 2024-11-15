@@ -20,7 +20,7 @@ const Main = () => {
   
     useEffect(() => {
       const getFilms = async () => {
-        const response = await axios.get(`${BASE_URL}/api/films`)
+        const response = await axios.get(`https://swapi.dev/api/films`)
         setFilms(response.data.results)
       }
     
@@ -29,7 +29,7 @@ const Main = () => {
   
     useEffect(() => {
       const getCharacters = async () => {
-        const response = await axios.get(`${BASE_URL}/api/people`)
+        const response = await axios.get(`https://swapi.dev/api/people`)
         setCharacters(response.data.results)
       }
     

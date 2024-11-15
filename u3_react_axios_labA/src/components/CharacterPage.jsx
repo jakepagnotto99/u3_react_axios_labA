@@ -9,7 +9,7 @@ const CharacterPage = () => {
 
     useEffect(()=>{
         const getFilm = async() => {
-            const response = await axios.get(`${BASE_URL}/api/people/${characterId}`)
+            const response = await axios.get(`https://swapi.dev/api/people/${characterId}`)
             setCharacterData(response.data)
         }
         getFilm()
